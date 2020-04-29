@@ -6,8 +6,9 @@ public class Person implements Serializable {
     public String nick;
     public int age;
     public LocalDate registration;
-    public Person(String nick, int age, LocalDate registration){
-        this.nick =nick;
+
+    public Person(String nick, int age, LocalDate registration) {
+        this.nick = nick;
         this.age = age;
         this.registration = registration;
 

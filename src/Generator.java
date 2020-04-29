@@ -1,8 +1,7 @@
 import java.time.LocalDate;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Generator  {
-
+public class Generator {
 
 
     public String getName() {
@@ -21,11 +20,12 @@ public class Generator  {
         return word;
 
     }
+
     public int age;
 
     public int getAge() {
         age = (int) (Math.random() * 16 + 1);
-       // System.out.println(age);
+        // System.out.println(age);
         return age;
     }
 
