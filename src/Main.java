@@ -11,17 +11,15 @@ public class Main {
         Person[] person = new Person[10];
         for (int i = 0; i < person.length; i++) {
             person[i] = new Person(r.getName(), r.getAge(), r.getDate());
-            //   System.out.println(person[i]);
+            //  System.out.println(person[i]);
 
         }
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("person2.txt"));
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("person3.txt"));
 
         oos.writeObject(person);
-        oos.writeUTF(String.valueOf(r));
         oos.close();
-
-
     }
+
 
 }
 
