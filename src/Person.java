@@ -18,26 +18,6 @@ public class Person implements Serializable {
         return nick;
     }
 
-    public void setNick(String nick) {
-        this.nick = nick;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public LocalDate getRegistration() {
-        return registration;
-    }
-
-    public void setRegistration(LocalDate registration) {
-        this.registration = registration;
-    }
-
     @Override
     public String toString() {
         return "Person{" +
