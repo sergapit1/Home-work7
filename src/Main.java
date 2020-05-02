@@ -15,7 +15,7 @@ public class Main {
         Person[] person = new Person[100];
         for (int i = 0; i < person.length; i++) {
             person[i] = new Person(r.getName(), r.getAge(), r.getDate());
-           // System.out.println(person[i]);
+           System.out.println(person[i]);
 
 
         }
