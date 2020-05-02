@@ -12,7 +12,7 @@ public class Main {
 
 
         Generator r = new Generator();
-        Person[] person = new Person[100];
+        Person[] person = new Person[100000];
         for (int i = 0; i < person.length; i++) {
             person[i] = new Person(r.getName(), r.getAge(), r.getDate());
            System.out.println(person[i]);
