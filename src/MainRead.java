@@ -11,23 +11,19 @@ public class MainRead {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-     ObjectInputStream ois = new ObjectInputStream(new FileInputStream("person4.bin"));
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("person4.bin"));
 
         ArrayList<Person> person1 = new ArrayList<>();
 
+        try {
 
-           try {
+            person1.add((Person) ois.readObject());
+            ois.close();
 
-        person1.add((Person)ois.readObject());
-               ois.close();
-
-            } catch (ClassCastException e) {
-
-
-       }
+        } catch (ClassCastException e) {
+        }
 
         System.out.println(person1);
-
     }
 }
 
